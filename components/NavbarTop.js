@@ -49,8 +49,8 @@ const NavbarTop = () => {
     <Navbar style={{ marginBottom: "20px" }}>
       <Container>
         <Navbar.Brand href="/">
-          <Image
-            src={logo}
+          <img
+            src={logo.src}
             className={style.logo}
             alt="Consent logo"
           />
