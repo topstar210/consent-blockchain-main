@@ -1,0 +1,72 @@
+.main {
+  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: ClashGrotesk, Arial, Helvetica, sans-serif;
+  border-radius: 0.5rem;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 28, 247, 1) 1%,
+    rgba(0, 240, 255, 1)
+  );
+}
+
+.title {
+  color: #fff;
+  font-size: 36px;
+  margin-top: 24px;
+  line-height: 44px;
+}
+.subtitle {
+  color: #fff;
+  font-size: 24px;
+}
+.button {
+  width: 100%;
+  max-width: 500px;
+  background-color: #000;
+  color: #fff;
+  margin: auto;
+  display: block;
+  font-size: 20px;
+  padding: 10px 0px;
+  text-align: center;
+  border-radius: 100px;
+}
+.transactionID {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+.closeButton {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 24px;
+  right: 20px;
+  cursor: pointer;
+}
+@media (max-width: 476px) {
+  .main {
+    padding: 16px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+  .transactionID {
+    font-size: 16px;
+  }
+  .modal {
+    max-width: 360px;
+    margin-inline: 20px;
+    margin: auto;
+  }
+}

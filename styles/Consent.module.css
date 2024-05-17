@@ -1,0 +1,137 @@
+.main {
+  width: 100%;
+  max-width: 1060px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 20px;
+  border: 0.5px solid #fff;
+  backdrop-filter: blur(63px);
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 25px;
+}
+.title {
+  font-size: 48px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 1.28px;
+  font-family: ClashGrotesk, Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #ff1cf7, #00f0ff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.subtitle {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  margin-top: 28px;
+  letter-spacing: 2px;
+  font-family: ClashGrotesk, Arial, Helvetica, sans-serif;
+}
+.confirmationContainer {
+  display: flex;
+}
+.confirmationBox {
+  width: 400px;
+  margin: 22px auto;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 20px;
+  border: 0.5px solid #fff;
+  backdrop-filter: blur(63px);
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.confirmationText {
+  font-size: 28px;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+}
+.button {
+  width: 100%;
+  color: #fff;
+  max-width: 500px;
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 20px;
+  border: 0.5px solid #fff;
+  backdrop-filter: blur(63px);
+  margin: auto;
+  display: block;
+  font-size: 20px;
+  padding: 20px 0px;
+  text-align: center;
+  border-radius: 100px;
+  margin-top: 32px;
+}
+@media (max-width: 1280px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+  }
+  .confirmationContainer {
+    gap: 16px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main {
+    width: 760px;
+  }
+  .confirmationContainer {
+    flex-direction: column;
+  }
+  .confirmationBox {
+    width: 300px;
+  }
+  .image {
+    width: 100px;
+    height: auto;
+  }
+  .confirmationText {
+    font-size: 20px;
+  }
+  .title {
+    font-size: 36px;
+  }
+  .subtitle {
+    font-size: 20px;
+  }
+}
+@media (max-width: 476px) {
+  .main {
+    width: 360px;
+  }
+  .confirmationContainer {
+    gap: 0px;
+  }
+  .confirmationBox {
+    margin-bottom: 0;
+    padding: 20px 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 320px;
+    height: 150px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .subtitle {
+    font-size: 24px;
+  }
+  .button {
+    font-size: 16px;
+  }
+}

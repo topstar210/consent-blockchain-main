@@ -1,0 +1,67 @@
+.main {
+  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  border-radius: 0.5rem;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 28, 247, 1) 1%,
+    rgba(0, 240, 255, 1)
+  );
+}
+.title {
+  color: #fff;
+  font-family: ClashGrotesk, Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  margin-top: 24px;
+  line-height: 44px;
+}
+.subtitle {
+  font-size: 24px;
+  font-family: ClashGrotesk, Arial, Helvetica, sans-serif;
+  margin-bottom: 24px;
+}
+.button {
+  width: 100%;
+  max-width: 500px;
+  background-color: #000;
+  color: #fff;
+  margin: auto;
+  display: block;
+  font-size: 20px;
+  font-family: ClashGrotesk, Arial, Helvetica, sans-serif;
+  padding: 10px 0px;
+  text-align: center;
+  border-radius: 100px;
+}
+
+.closeButton {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 24px;
+  right: 20px;
+  cursor: pointer;
+}
+@media (max-width: 480px) {
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .subtitle {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .button {
+    font-size: 20px;
+  }
+  .modal {
+    max-width: 360px;
+    margin-inline: 20px;
+    margin: auto;
+  }
+}
