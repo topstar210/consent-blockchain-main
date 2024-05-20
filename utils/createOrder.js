@@ -3,7 +3,8 @@ import generateAccessToken from "./generateAccessToken";
 import handleResponse from "./handleResponse";
 
 const createOrder = async (cart) => {
-  const base = "https://api-m.sandbox.paypal.com";
+  const base = "https://api-m.paypal.com";
+  // const base = "https://api-m.sandbox.paypal.com";
 
   const accessToken = await generateAccessToken();
   const url = `${base}/v2/checkout/orders`;

@@ -1,7 +1,8 @@
 import fetch from "node-fetch";
 
 const generateAccessToken = async () => {
-    const base = "https://api-m.sandbox.paypal.com";
+    const base = "https://api-m.paypal.com";
+    // const base = "https://api-m.sandbox.paypal.com";
     const PAYPAL_CLIENT_ID = process.env.PAYPAL_CLIENT_KEY;
     const PAYPAL_CLIENT_SECRET = process.env.PAYPAL_SECRET_KEY;
     try {

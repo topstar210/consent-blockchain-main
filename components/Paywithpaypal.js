@@ -78,7 +78,7 @@ const Paywithpaypal = ({ showModal, body }) => {
     const createOrder = async (data) => {
 
         try {
-            const response = await axios.post("/api/paypal/createorder", {
+            const response = await axios.post("/api/paypal/createOrder", {
                 product: {
                     description: "My Product Description",
                     cost: "1.09"
